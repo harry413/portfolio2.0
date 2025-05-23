@@ -43,27 +43,27 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group border border-gray-100"
+              className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group border border-gray-100 dark:border-gray-700"
             >
               <div className="flex items-center justify-between mb-4">
                 <div className={`px-3 py-1 rounded-full text-sm font-medium ${
                   project.status === 'Active' 
-                    ? 'bg-green-100 text-green-800' 
-                    : 'bg-blue-100 text-blue-800'
+                    ? 'bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200' 
+                    : 'bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-200'
                 }`}>
                   {project.status}
                 </div>
-                <div className="flex items-center text-gray-500 text-sm">
+                <div className="flex items-center text-gray-500 dark:text-gray-400 text-sm">
                   <Calendar className="w-4 h-4 mr-1" />
                   {project.period}
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-purple-600 transition-colors duration-200">
+              <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 group-hover:text-purple-600 transition-colors duration-200">
                 {project.title}
               </h3>
               
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
                 {project.description}
               </p>
 
@@ -71,7 +71,7 @@ const Projects = () => {
                 {project.tech.map((tech, techIndex) => (
                   <span 
                     key={techIndex}
-                    className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                    className="px-3 py-1 bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-purple-200 rounded-full text-sm font-medium"
                   >
                     {tech}
                   </span>
@@ -83,7 +83,7 @@ const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-all duration-200 group-hover:scale-105"
+                  className="flex items-center px-4 py-2 bg-gray-800 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-200 group-hover:scale-105"
                 >
                   <Github className="w-4 h-4 mr-2" />
                   Code

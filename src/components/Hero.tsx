@@ -51,7 +51,7 @@ const Hero: React.FC<HeroProps> = ({ scrollY }) => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Creating intuitive and engaging web experiences with React
           </p>
           
@@ -60,23 +60,23 @@ const Hero: React.FC<HeroProps> = ({ scrollY }) => {
               href="https://github.com/harry413"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
+              className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
             >
-              <Github className="w-6 h-6 text-gray-700 group-hover:text-purple-600 transition-colors duration-200" />
+              <Github className="w-6 h-6 text-gray-700 dark:text-gray-300 group-hover:text-purple-600 transition-colors duration-200" />
             </a>
             <a
               href="https://linkedin.com/in/sachin-patidar-921578213"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
+              className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
             >
-              <Linkedin className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors duration-200" />
+              <Linkedin className="w-6 h-6 text-gray-700 dark:text-gray-300 group-hover:text-blue-600 transition-colors duration-200" />
             </a>
             <a
               href="mailto:sachinpatidar413@gmail.com"
-              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
+              className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
             >
-              <Mail className="w-6 h-6 text-gray-700 group-hover:text-green-600 transition-colors duration-200" />
+              <Mail className="w-6 h-6 text-gray-700 dark:text-gray-300 group-hover:text-green-600 transition-colors duration-200" />
             </a>
           </div>
           
@@ -87,7 +87,7 @@ const Hero: React.FC<HeroProps> = ({ scrollY }) => {
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ChevronDown className="w-8 h-8 text-gray-400" />
+        <ChevronDown className="w-8 h-8 text-gray-400 dark:text-gray-500" />
       </div>
     </section>
   );
