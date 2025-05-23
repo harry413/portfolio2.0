@@ -92,6 +92,11 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Set dark theme by default */
+  html {
+    @apply dark;
+  }
 }
 
 @layer utilities {
@@ -117,10 +122,16 @@
 
   @keyframes float {
     0%, 100% {
-      transform: translateY(0px);
+      transform: translateY(0px) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-10px) rotate(1deg);
     }
     50% {
-      transform: translateY(-20px);
+      transform: translateY(-20px) rotate(0deg);
+    }
+    75% {
+      transform: translateY(-10px) rotate(-1deg);
     }
   }
 
@@ -166,13 +177,13 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar for dark theme */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #1f2937;
 }
 
 ::-webkit-scrollbar-thumb {
