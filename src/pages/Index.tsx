@@ -9,6 +9,7 @@ import Contact from '../components/Contact';
 import Navigation from '../components/Navigation';
 import LoadingScreen from '../components/LoadingScreen';
 import { ThemeProvider } from '../contexts/ThemeContext';
+ import ThemeToggle from '../components/ThemeToggle';
 
 const Index = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -36,6 +37,7 @@ const Index = () => {
           <Projects />
           <Skills />
           <Contact />
+          <ThemeToggle />
         </main>
       </div>
     </ThemeProvider>

@@ -25,9 +25,13 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
-      }`}>
+      <nav
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+          scrolled
+            ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg"
+            : "bg-transparent"
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
@@ -62,6 +66,7 @@ const Navigation = () => {
           {/* Mobile Navigation */}
           {isOpen && (
             <div className="md:hidden bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-lg mt-2 p-4 shadow-lg animate-fade-in">
+              <ThemeToggle />
               {navItems.map((item) => (
                 <a
                   key={item.name}
@@ -76,7 +81,6 @@ const Navigation = () => {
           )}
         </div>
       </nav>
-      <ThemeToggle />
     </>
   );
 };
