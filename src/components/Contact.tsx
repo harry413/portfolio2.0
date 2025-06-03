@@ -165,7 +165,7 @@ const Contact = () => {
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
           <p className="text-gray-600 dark:text-gray-400">
-            © 2024 Sachin Patidar. Built with React & Tailwind CSS. Designed with ❤️
+            © 2024 Sachin Patidar. Designed with ❤️
           </p>
         </div>
       </div>
