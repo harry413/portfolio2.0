@@ -25,8 +25,8 @@ const Hero: React.FC<HeroProps> = ({ scrollY }) => {
           className="absolute w-96 h-96 bg-purple-300/20 rounded-full blur-3xl animate-pulse"
           style={{
             transform: `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02}px)`,
-            left: '10%',
-            top: '20%',
+            left: '-10%',
+            top: '-10%',
           }}
         />
         <div 
@@ -34,7 +34,7 @@ const Hero: React.FC<HeroProps> = ({ scrollY }) => {
           style={{
             transform: `translate(${mousePosition.x * -0.02}px, ${mousePosition.y * -0.02}px)`,
             right: '10%',
-            bottom: '20%',
+            bottom: '10%',
             animationDelay: '1s',
           }}
         />
