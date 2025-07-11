@@ -154,20 +154,20 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300"
+      className="py-20 px-4 bg-background transition-colors duration-300"
       ref={sectionRef}
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-6xl font-bold mb-4">
-            <span className="text-gray-300 dark:text-gray-700">MY</span>
-            <span className="text-gray-800 dark:text-white ml-4">SKILLS</span>
+            <span className="text-muted-foreground">MY</span>
+            <span className="text-foreground ml-4">SKILLS</span>
           </h2>
         </div>
 
         {/* Skills Bubble Section */}
         <div className="my-10">
-          <div className="relative min-h-[500px] bg-gradient-to-br from-gray-900 to-purple-900 dark:from-gray-800 dark:to-purple-800 rounded-3xl overflow-hidden p-8">
+          <div className="relative min-h-[500px] bg-gradient-to-br from-gray-900 to-purple-900 dark:from-gray-950 dark:to-purple-950 rounded-3xl overflow-hidden p-8">
             {/* Background animation */}
             <div className="absolute inset-0 overflow-hidden">
               {[...Array(20)].map((_, i) => (
@@ -213,9 +213,6 @@ const Skills = () => {
                       }}
                     >
                       <div className="text-xl mb-1">{skill.icon}</div>
-                      {/* <div className="text-xs text-center px-2 leading-tight">
-                        {skill.name}
-                      </div> */}
 
                       {/* Hover tooltip */}
                       <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black/20 text-white px-3 py-1 rounded-lg text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-20">
@@ -249,15 +246,14 @@ const Skills = () => {
 
         {/* Certifications */}
         <div>
-          <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-6 text-center">
+          <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
             Certifications
           </h3>
           <div className="grid md:grid-cols-3 gap-4">
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className={`bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/30 dark:to-blue-900/30 
-                  rounded-lg p-4 border-l-4 border-purple-500 hover:shadow-lg transition-all duration-300 
+                className={`glass-card-light dark:glass-card rounded-lg p-4 border-l-4 border-purple-500 hover:shadow-lg transition-all duration-300 
                   transform hover:scale-105 ${
                     isVisible
                       ? "opacity-100 translate-y-0"
@@ -267,7 +263,7 @@ const Skills = () => {
                   transitionDelay: `${(index + skills.length) * 100}ms`,
                 }}
               >
-                <p className="text-gray-700 dark:text-gray-300 font-medium text-sm">
+                <p className="text-foreground font-medium text-sm">
                   {cert}
                 </p>
               </div>

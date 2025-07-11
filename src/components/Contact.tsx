@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-purple-900 dark:to-indigo-900">
+    <section id="contact" className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
           <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
@@ -37,8 +37,8 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-6">Get in Touch</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-8">
+              <h3 className="text-2xl font-bold text-foreground mb-6">Get in Touch</h3>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
                 I'm always excited to discuss new opportunities, innovative projects, 
                 or just chat about the latest in web development. Feel free to reach out!
               </p>
@@ -50,8 +50,8 @@ const Contact = () => {
                   <Mail className="w-6 h-6 text-purple-600 dark:text-purple-300" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-800 dark:text-gray-200">Email</p>
-                  <a href="mailto:sachinpatidar413@gmail.com" className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors duration-200">
+                  <p className="font-semibold text-foreground">Email</p>
+                  <a href="mailto:sachinpatidar413@gmail.com" className="text-muted-foreground hover:text-purple-600 dark:hover:text-purple-400 transition-colors duration-200">
                     sachinpatidar413@gmail.com
                   </a>
                 </div>
@@ -62,8 +62,8 @@ const Contact = () => {
                   <Phone className="w-6 h-6 text-blue-600 dark:text-blue-300" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-800 dark:text-gray-200">Phone</p>
-                  <a href="tel:+919589005828" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                  <p className="font-semibold text-foreground">Phone</p>
+                  <a href="tel:+919589005828" className="text-muted-foreground hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     +91 9589005828
                   </a>
                 </div>
@@ -74,8 +74,8 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-green-600 dark:text-green-300" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-800 dark:text-gray-200">Location</p>
-                  <p className="text-gray-600 dark:text-gray-400">Indore, Madhya Pradesh, India</p>
+                  <p className="font-semibold text-foreground">Location</p>
+                  <p className="text-muted-foreground">Indore, Madhya Pradesh, India</p>
                 </div>
               </div>
             </div>
@@ -101,10 +101,10 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
+          <div className="glass-card-light dark:glass-card rounded-2xl p-8 shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                   Your Name
                 </label>
                 <input
@@ -114,13 +114,13 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-border bg-background text-foreground rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
                   placeholder="Harry Patidar"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                   Email Address
                 </label>
                 <input
@@ -130,13 +130,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-border bg-background text-foreground rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
                   placeholder="Harry@example.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                   Message
                 </label>
                 <textarea
@@ -146,7 +146,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 resize-none"
+                  className="w-full px-4 py-3 border border-border bg-background text-foreground rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 resize-none"
                   placeholder="Tell me about your project or just say hello!"
                 />
               </div>
@@ -163,8 +163,8 @@ const Contact = () => {
         </div>
 
         {/* Footer */}
-        <div className="text-center mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
-          <p className="text-gray-600 dark:text-gray-400">
+        <div className="text-center mt-16 pt-8 border-t border-border">
+          <p className="text-muted-foreground">
             © 2024 Sachin Patidar. Designed with ❤️
           </p>
         </div>
