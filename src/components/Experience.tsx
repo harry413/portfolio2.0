@@ -4,7 +4,7 @@ import { Calendar, MapPin, Award } from 'lucide-react';
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 px-4 bg-white dark:bg-gray-900">
+    <section id="experience" className="py-20 px-4 bg-white/5 dark:bg-black/20">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
           <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
@@ -21,12 +21,12 @@ const Experience = () => {
             <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-600 rounded-full border-4 border-white dark:border-gray-900 shadow-lg "></div>
 
             <div className="w-full max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-purple-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 md:mr-12 ">
+              <div className="glass-card-light dark:glass-card rounded-2xl p-8 hover:shadow-xl transition-all duration-300 md:mr-12 ">
                 <div className="flex items-center mb-4">
                   <div className="bg-purple-600 rounded-full p-2 mr-3">
                     <Award className="w-5 h-5 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-white">
                     Frontend Engineer
                   </h3>
                 </div>
@@ -35,12 +35,12 @@ const Experience = () => {
                   Impetrosys Software Solution Pvt. Ltd
                 </h4>
 
-                <div className="flex items-center text-gray-600 dark:text-gray-400 mb-4">
+                <div className="flex items-center text-gray-600 dark:text-gray-300 mb-4">
                   <Calendar className="w-4 h-4 mr-2" />
                   <span>Jan 2023 - Dec 2024</span>
                 </div>
 
-                <div className="flex items-center text-gray-600 dark:text-gray-400 mb-6">
+                <div className="flex items-center text-gray-600 dark:text-gray-300 mb-6">
                   <MapPin className="w-4 h-4 mr-2" />
                   <span>Indore, MP</span>
                 </div>
@@ -81,8 +81,8 @@ const Experience = () => {
             <div className="w-full max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
               <div className="hidden md:block"></div>
 
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 md:ml-12">
-                <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">
+              <div className="glass-card-light dark:glass-card rounded-2xl p-8 hover:shadow-xl transition-all duration-300 md:ml-12">
+                <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
                   Education
                 </h3>
 

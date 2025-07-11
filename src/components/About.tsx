@@ -32,13 +32,13 @@ const About = () => {
         
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-gray-200 leading-relaxed">
               I am passionate about creating intuitive and engaging web experiences and continuously 
               seek to expand my skill set and stay updated with industry trends. I am eager to 
               contribute my knowledge and experience to exciting projects and collaborate with 
               like-minded professionals in the tech community.
             </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-gray-200 leading-relaxed">
               As a Frontend Engineer at Impetrosys Software Solution, I developed and maintained 
               user interfaces using React, ensuring responsive design and optimal performance while 
               implementing state management using Redux to efficiently manage application data.
@@ -47,13 +47,13 @@ const About = () => {
           
           <div className="relative">
             <div className="w-full h-80 bg-gradient-to-br from-purple-400 to-blue-500 rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300"></div>
-            <div className="absolute inset-0 w-full h-80 bg-white dark:bg-gray-800 rounded-3xl shadow-2xl flex items-center justify-center">
+            <div className="absolute inset-0 w-full h-80 glass-card-light dark:glass-card rounded-3xl flex items-center justify-center">
               <div className="text-center">
                 <div className="w-24 h-24 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-white text-2xl font-bold">SP</span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200">Sachin Patidar</h3>
-                <p className="text-gray-600 dark:text-gray-400">Frontend Engineer</p>
+                <h3 className="text-2xl font-bold text-gray-800 dark:text-white">Sachin Patidar</h3>
+                <p className="text-gray-600 dark:text-gray-300">Frontend Engineer</p>
               </div>
             </div>
           </div>
@@ -63,13 +63,13 @@ const About = () => {
           {highlights.map((highlight, index) => (
             <div 
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+              className="glass-card-light dark:glass-card rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:scale-105 group"
             >
-              <div className="text-purple-600 mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-purple-600 dark:text-purple-400 mb-4 group-hover:scale-110 transition-transform duration-300">
                 {highlight.icon}
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-gray-200">{highlight.title}</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{highlight.description}</p>
+              <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-white">{highlight.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{highlight.description}</p>
             </div>
           ))}
         </div>
